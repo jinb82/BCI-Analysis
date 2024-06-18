@@ -7,12 +7,7 @@ This repository contains the code and data for the paper "Comparative Analysis b
 - [Datasets](#datasets)
 - [Feature Extraction Methods](#feature-extraction-methods)
 - [Classification Pipeline](#classification-pipeline)
-- [Results](#results)
-- [Execution Time](#execution-time)
-- [Discussion](#discussion)
-- [Conclusion](#conclusion)
 - [Usage](#usage)
-- [License](#license)
 
 ## Introduction
 This project investigates how features extracted from different domains (spatial, spectral, and temporal) affect the performance of quaternary motor imagery classification problems. The classification performance is compared between simple and complex motor imagery tasks.
@@ -46,18 +41,6 @@ The EEG data is preprocessed and features are extracted using the methods descri
 - Support Vector Machine (SVM)
 - Random Forest (RF)
 - Logistic Regression (LR)
-
-## Results
-The classification accuracy for each feature extraction method and classifier combination is presented in the results section. 
-
-## Execution Time
-The execution time for each feature extraction method is provided to compare efficiency.
-
-## Discussion
-This section discusses the implications of the results, comparing the effectiveness of different feature extraction methods for simple and complex motor imagery tasks.
-
-## Conclusion
-The study concludes with insights into which feature extraction methods are most effective for different types of motor imagery and suggestions for future research.
 
 ## Usage
 ### Prerequisites
