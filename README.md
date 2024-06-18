@@ -1,1 +1,72 @@
-# BCI-Analysis
+# Comparative Analysis between Spatial, Spectral, and Temporal Domain Features in Simple and Complex Motor Imagery
+
+This repository contains the code and data for the paper "Comparative Analysis between Spatial, Spectral, and Temporal Domain Features in Simple and Complex Motor Imagery."
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Datasets](#datasets)
+- [Feature Extraction Methods](#feature-extraction-methods)
+- [Classification Pipeline](#classification-pipeline)
+- [Results](#results)
+- [Execution Time](#execution-time)
+- [Discussion](#discussion)
+- [Conclusion](#conclusion)
+- [Usage](#usage)
+- [License](#license)
+
+## Introduction
+This project investigates how features extracted from different domains (spatial, spectral, and temporal) affect the performance of quaternary motor imagery classification problems. The classification performance is compared between simple and complex motor imagery tasks.
+
+## Datasets
+The following publicly available motor imagery datasets are used in this study:
+- **Dataset A**: Data Set IIa from BCI Competition IV
+- **Dataset B**: Data Set IIIa from BCI Competition III
+- **Dataset C**: Ofner et al. 2017
+- **Dataset D**: Ofner et al. 2019
+
+## Feature Extraction Methods
+### Spatial Domain
+- Common Spatial Patterns (CSP)
+- Sparse CSP (SCSP)
+- Source Power Comodulation (SPoC)
+
+### Spectral Domain
+- Welch's method for Power Spectral Density (PSD)
+- Periodogram PSD estimation
+- Yule-Walker method for PSD estimation
+
+### Temporal Domain
+- Hjorth Parameters
+- Time Domain Parameters (TDP)
+- Hurst Exponent
+
+## Classification Pipeline
+The EEG data is preprocessed and features are extracted using the methods described above. Four machine learning classifiers are used:
+- Shrinkage-regularized Linear Discriminant Analysis (SRLDA)
+- Support Vector Machine (SVM)
+- Random Forest (RF)
+- Logistic Regression (LR)
+
+## Results
+The classification accuracy for each feature extraction method and classifier combination is presented in the results section. 
+
+## Execution Time
+The execution time for each feature extraction method is provided to compare efficiency.
+
+## Discussion
+This section discusses the implications of the results, comparing the effectiveness of different feature extraction methods for simple and complex motor imagery tasks.
+
+## Conclusion
+The study concludes with insights into which feature extraction methods are most effective for different types of motor imagery and suggestions for future research.
+
+## Usage
+### Prerequisites
+- Python 3.x
+- Jupyter Notebook
+- Required Python libraries: numpy, scipy, scikit-learn, mne
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/BCI-Analysis.git
+   cd BCI-Analysis
