@@ -47,9 +47,3 @@ The EEG data is preprocessed and features are extracted using the methods descri
 - Python 3.x
 - Jupyter Notebook
 - Required Python libraries: numpy, scipy, scikit-learn, mne
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/BCI-Analysis.git
-   cd BCI-Analysis
